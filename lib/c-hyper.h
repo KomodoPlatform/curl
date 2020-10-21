@@ -33,6 +33,7 @@ struct hyptransfer {
   hyper_waker *read_waker;
   const hyper_executor *exec;
   hyper_task *handshake;
+  bool init;
 };
 
 #endif /* !defined(CURL_DISABLE_HTTP) && defined(USE_HYPER) */
